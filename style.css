@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* สีชมพูอ่อนๆ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.search-form {
+    display: flex;
+    margin: 20px 0;
+}
+
+#pokemonInput {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px 0 0 8px;
+}
+
+#searchButton {
+    background-color: #e91e63; /* สีชมพูเข้ม */
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #c2185b;
+}
+
+.pokemon-card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fafafa;
+    min-height: 250px;
+}
+
+.pokemon-card h2 {
+    text-transform: capitalize; /* ทำให้ตัวแรกเป็นตัวพิมพ์ใหญ่ */
+    margin-top: 0;
+}
+
+.pokemon-card img {
+    width: 150px;
+    height: 150px;
+}
